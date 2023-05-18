@@ -9,7 +9,7 @@ import { setMovementCamera, setSpawn, spawnPlayer, updateFirstPersonMovement, wo
 import { SSRDebugGUI } from "./SSRDebugGUI"
 import "./style.css"
 
-SSREffect.patchDirectEnvIntensity(0.1)
+// SSREffect.patchDirectEnvIntensity(0.1)
 
 let ssrEffect
 let gui
@@ -170,8 +170,8 @@ gltflLoader.load(url, asset => {
 				}
 
 				c.material.onBeforeCompile = shader => {
-					useBoxProjectedEnvMap(shader, envMapPos, envMapSize)
-					enhanceShaderLighting(shader, enhanceShaderLightingOptions)
+					// useBoxProjectedEnvMap(shader, envMapPos, envMapSize)
+					// enhanceShaderLighting(shader, enhanceShaderLightingOptions)
 				}
 			}
 

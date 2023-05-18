@@ -40,10 +40,10 @@ const aoCode = /* glsl */ `
 float aoMapClr = 1.;
 
 #ifdef USE_AOMAP
-    aoMapClr = (texture2D(aoMap, vUv2).r - 1.) * aoMapIntensity + 1.;
+    aoMapClr = (texture2D(aoMap, vAoMapUv).r - 1.) * aoMapIntensity + 1.;
 #else
     #ifdef USE_LIGHTMAP
-        vec3 lightMapVec = (texture2D(lightMap, vUv2).rgb - vec3(1.)) * (lightMapIntensity / PI) + vec3(1.);
+        vec3 lightMapVec = (texture2D(lightMap, vLightMapUv).rgb - vec3(1.)) * (lightMapIntensity / PI) + vec3(1.);
         
         const vec3 luminanceWeight = vec3(0.2126, 0.7152, 0.0722);
 
@@ -135,7 +135,7 @@ const map_fragment = THREE.ShaderChunk.map_fragment.replace(
 	"diffuseColor *= sampledDiffuseColor;",
 	/* glsl */ `
     #ifdef USE_LIGHTMAP
-        vec3 lightMapClr = (texture2D(lightMap, vUv2).rgb - vec3(1.)) * (lightMapIntensity / PI) + vec3(1.);
+        vec3 lightMapClr = (texture2D(lightMap, vLightMapUv).rgb - vec3(1.)) * (lightMapIntensity / PI) + vec3(1.);
     #else
         vec3 lightMapClr = vec3(1.);
     #endif

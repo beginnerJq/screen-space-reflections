@@ -27,9 +27,7 @@ export class MRTMaterial extends ShaderMaterial {
                  varying vec2 vHighPrecisionZW;
                 #endif
                 #define NORMAL
-                #if defined( FLAT_SHADED ) || defined( USE_BUMPMAP ) || defined( TANGENTSPACE_NORMALMAP )
-                    varying vec3 vViewPosition;
-                #endif
+                varying vec3 vViewPosition;
                 #include <common>
                 #include <uv_pars_vertex>
                 #include <displacementmap_pars_vertex>
@@ -38,6 +36,7 @@ export class MRTMaterial extends ShaderMaterial {
                 #include <skinning_pars_vertex>
                 #include <logdepthbuf_pars_vertex>
                 #include <clipping_planes_pars_vertex>
+                uniform mat3 uvTransform;
                 void main() {
                     #include <uv_vertex>
                     #include <beginnormal_vertex>
@@ -53,9 +52,6 @@ export class MRTMaterial extends ShaderMaterial {
                     #include <project_vertex>
                     #include <logdepthbuf_vertex>
                     #include <clipping_planes_vertex>
-                    #if defined( FLAT_SHADED ) || defined( USE_BUMPMAP ) || defined( TANGENTSPACE_NORMALMAP )
-                        vViewPosition = - mvPosition.xyz;
-                    #endif
                     #ifdef USE_MRT
                         vHighPrecisionZW = gl_Position.zw;
                     #endif 
@@ -67,9 +63,7 @@ export class MRTMaterial extends ShaderMaterial {
 
 			fragmentShader: /* glsl */ `
                  #define NORMAL
-                #if defined( FLAT_SHADED ) || defined( USE_BUMPMAP ) || defined( TANGENTSPACE_NORMALMAP )
-                    varying vec3 vViewPosition;
-                #endif
+                varying vec3 vViewPosition;
                 #include <packing>
                 #include <uv_pars_fragment>
                 #include <normal_pars_fragment>

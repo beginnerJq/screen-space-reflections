@@ -17,7 +17,7 @@ export class SSRDebugGUI {
 		const generalFolder = pane.addFolder({ title: "General" })
 		generalFolder.addInput(params, "intensity", { min: 0, max: 3, step: 0.01 })
 		generalFolder.addInput(params, "exponent", { min: 0.125, max: 8, step: 0.125 })
-		generalFolder.addInput(params, "distance", { min: 0.001, max: 10, step: 0.1 })
+		generalFolder.addInput(params, "distance", { min: 0.001, max: 50, step: 0.1 })
 		generalFolder.addInput(params, "fade", {
 			min: 0,
 			max: 20,

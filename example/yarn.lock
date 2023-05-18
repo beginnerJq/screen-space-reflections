@@ -17,11 +17,6 @@
   dependencies:
     "webgl-constants" "^1.1.1"
 
-"esbuild-windows-64@0.14.48":
-  "integrity" "sha512-YmpXjdT1q0b8ictSdGwH3M8VCoqPpK1/UArze3X199w6u8hUx3V8BhAi1WjbsfDYRBanVVtduAhh2sirImtAvA=="
-  "resolved" "https://registry.npmjs.org/esbuild-windows-64/-/esbuild-windows-64-0.14.48.tgz"
-  "version" "0.14.48"
-
 "esbuild@^0.14.47":
   "integrity" "sha512-w6N1Yn5MtqK2U1/WZTX9ZqUVb8IOLZkZ5AdHkT6x3cHDMVsYWC7WPdiLmx19w3i4Rwzy5LqsEMtVihG3e4rFzA=="
   "resolved" "https://registry.npmjs.org/esbuild/-/esbuild-0.14.48.tgz"
@@ -52,6 +47,11 @@
   "integrity" "sha512-Rfkk/Mp/DL7JVje3u18FxFujQlTNR2q6QfMSMB7AvCBx91NGj/ba3kCfza0f6dVDbw7YlRf/nDrn7pQrCCyQ/w=="
   "resolved" "https://registry.npmjs.org/estree-walker/-/estree-walker-2.0.2.tgz"
   "version" "2.0.2"
+
+"fsevents@~2.3.2":
+  "integrity" "sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA=="
+  "resolved" "https://registry.npmjs.org/fsevents/-/fsevents-2.3.2.tgz"
+  "version" "2.3.2"
 
 "function-bind@^1.1.1":
   "integrity" "sha512-yIovAzMX49sF8Yl58fSCWJ5svSLuaibPxXQJFLmBObTuCr0Mf1KiPopGM9NiFjiYBCbfaa2Fh6breQ6ANVTI0A=="
@@ -106,10 +106,10 @@
     "picocolors" "^1.0.0"
     "source-map-js" "^1.0.2"
 
-"postprocessing@^6.28.3":
-  "integrity" "sha512-Y3VzV2pa+EJlzXOFyNTV/6htDQsHdhhYhpALyfv/9fk9H+GbUR/Zw2wjpZO1JWqO1x/nYbhmZficwvVk981EEw=="
-  "resolved" "https://registry.npmjs.org/postprocessing/-/postprocessing-6.28.3.tgz"
-  "version" "6.28.3"
+"postprocessing@^6.31.0":
+  "integrity" "sha512-h1g2KDVrTS6QB4AHP55opp8FYzq66jJHh4JIFCptaj283RUX1y/tPkv8FBB2oK4WYrdPgqvElnKrXZwgiLWeHQ=="
+  "resolved" "https://registry.npmjs.org/postprocessing/-/postprocessing-6.31.0.tgz"
+  "version" "6.31.0"
 
 "resolve@^1.22.1":
   "integrity" "sha512-nBpuuYuY5jFsli/JIs1oldw6fOQCBioohqWZg/2hiaOybXOft4lonv85uDOKXdf8rhyK159cxU5cDcK/NKk8zw=="
@@ -161,10 +161,10 @@
   "resolved" "https://registry.npmjs.org/three.cubemap-to-equirectangular/-/three.cubemap-to-equirectangular-1.1.2.tgz"
   "version" "1.1.2"
 
-"three@^0.142.0", "three@>= 0.107.0 < 0.143.0":
-  "integrity" "sha512-ESjPO+3geFr+ZUfVMpMnF/eVU2uJPOh0e2ZpMFqjNca1wApS9lJb7E4MjwGIczgt9iuKd8PEm6Pfgp2bJ92Xtg=="
-  "resolved" "https://registry.npmjs.org/three/-/three-0.142.0.tgz"
-  "version" "0.142.0"
+"three@^0.152.2", "three@>= 0.138.0 < 0.153.0":
+  "integrity" "sha512-Ff9zIpSfkkqcBcpdiFo2f35vA9ZucO+N8TNacJOqaEE6DrB0eufItVMib8bK8Pcju/ZNT6a7blE1GhTpkdsILw=="
+  "resolved" "https://registry.npmjs.org/three/-/three-0.152.2.tgz"
+  "version" "0.152.2"
 
 "three@0.130.x":
   "integrity" "sha512-OSPPKcGvFSiGkG3jFrwwC76PBV/ZSrGxpBbg28bW8s9GU8r/y2spNGtEXHEb/CVqo0Ctf5Lx2rVaxQZB6OasaA=="
